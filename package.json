@@ -1,0 +1,41 @@
+{
+  "name": "BoilderPlate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@rematch/core": "^0.5.2",
+    "@rematch/react-navigation": "^1.0.0",
+    "react": "16.3.0-alpha.1",
+    "react-native": "^0.54.1",
+    "react-navigation": "^1.5.1",
+    "react-redux": "^5.0.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "22.4.1",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "next",
+    "jest": "22.4.2",
+    "react-test-renderer": "^16.3.0-alpha.1",
+    "reactotron-react-native": "^1.14.0",
+    "reactotron-redux": "^1.13.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint .",
+      "pre-push": "eslint ."
+    }
+  }
+}
